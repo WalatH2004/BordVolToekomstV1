@@ -5,15 +5,18 @@ public class Main {
 
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
-        } catch (Exception ignored){}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
         SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Login - EenBoordVolToekomst");
+            JFrame frame = new JFrame("Login - BordVolToekomst");
             frame.setContentPane(new LoginForm().getMainPanel());
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.pack();              // past grootte aan aan de inhoud
+            frame.pack();
             frame.setSize(1000,700);
-            frame.setLocationRelativeTo(null); // centreert het venster
+            frame.setLocationRelativeTo(null);
             frame.setVisible(true);
         });
     }
