@@ -1,11 +1,11 @@
 import javax.swing.*;
 
-public class MainForm {
+public class HomeForm {
     private JPanel mainPanel;
     private JTabbedPane tabbedPane;
-    private JPanel fridgePanel;
-    private JPanel addProductPanel;
-    private JPanel recipesPanel;
+    private JPanel koelkastPanel;
+    private JPanel productToevoegenPanel;
+    private JPanel receptenPanel;
     private JTextField barcodeField;
     private JTextField textField1;
     private JTextField textField2;
@@ -13,6 +13,8 @@ public class MainForm {
     private JButton scanButton;
     private JButton opslaanButton;
     private JLabel barcodeLabel;
+    private JPanel instellingenPanel;
+    private JPanel homePanel;
 
     public JPanel getMainPanel(){
         return mainPanel;

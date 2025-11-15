@@ -24,8 +24,6 @@ public class LoginForm {
             return;
         }
 
-        // SUPER SIMPEL: tijdelijke dummy-login
-        // Optie 1: vaste gebruiker
         if (email.equals("test") && password.equals("test")) {
             openMainForm();
         } else {
@@ -34,18 +32,13 @@ public class LoginForm {
                     "Fout",
                     JOptionPane.ERROR_MESSAGE);
         }
-
-        // Als je écht alles wilt toelaten voor nu, gebruik i.p.v. if/else:
-        // openMainForm();
     }
 
     private void openMainForm() {
-        // Huidig window (loginframe) pakken
         JFrame currentFrame = (JFrame) SwingUtilities.getWindowAncestor(mainPanel);
 
-        // Nieuw hoofdscherm
         JFrame frame = new JFrame("Inloggen - BoordVolToekomst");
-        frame.setContentPane(new MainForm().getMainPanel());
+        frame.setContentPane(new HomeForm().getMainPanel());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 700);
         frame.setLocationRelativeTo(null);

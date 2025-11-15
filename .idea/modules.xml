@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BoordVolToekomst.iml" filepath="$PROJECT_DIR$/BoordVolToekomst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BordVolToekomst.iml" filepath="$PROJECT_DIR$/BordVolToekomst.iml" />
     </modules>
   </component>
 </project>
