@@ -9,7 +9,6 @@ public class Main {
             e.printStackTrace();
         }
 
-
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Login - BordVolToekomst");
             frame.setContentPane(new LoginForm().getMainPanel());
