@@ -1,22 +1,32 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class HomeForm {
     private JPanel mainPanel;
-    private JTabbedPane tabbedPane;
-    private JPanel koelkastPanel;
-    private JPanel productToevoegenPanel;
-    private JPanel receptenPanel;
-    private JTextField barcodeField;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JButton scanButton;
-    private JButton opslaanButton;
-    private JLabel barcodeLabel;
-    private JPanel instellingenPanel;
-    private JPanel homePanel;
+    private JPanel navPanel;
+    private JButton button1;
+    private JButton button2;
+    private JButton button3;
+    private JButton button4;
+    private JButton button5;
+    private JPanel contentPanel;
+    private JPanel homeCard;
+    private JPanel koelkastCard;
+    private JPanel scanProductCard;
+    private JPanel receptenCard;
+    private JPanel profielCard;
 
-    public JPanel getMainPanel(){
+    public HomeForm() {
+        CardLayout cl = (CardLayout) contentPanel.getLayout();
+
+        button1.addActionListener(e -> cl.show(contentPanel, "homeCard"));
+        button2.addActionListener(e -> cl.show(contentPanel, "koelkastCard"));
+        button3.addActionListener(e -> cl.show(contentPanel, "scanProductCard"));
+        button4.addActionListener(e -> cl.show(contentPanel, "receptenCard"));
+        button5.addActionListener(e -> cl.show(contentPanel, "profielCard"));
+    }
+
+    public JPanel getMainPanel() {
         return mainPanel;
     }
 }
